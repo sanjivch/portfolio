@@ -11,6 +11,7 @@
     background: white;
     position: fixed;
     overflow: hidden;
+    z-index: 1;
 
     .nav-logo{
         font-weight: 800;
@@ -25,6 +26,7 @@
         
         align-items: center;
         justify-content: right;
+        overflow: hidden;
         //left:50%;
             a {
                 color: grey;
@@ -34,10 +36,20 @@
                 font-weight: 400;
                 position: relative;
                 opacity: 0.9;
+                border: solid 1px transparent;
+                padding: 5px 5px;
                 justify-content: center;
+                top: 0;
+                transition: top ease 0.5s;
+                
                 &:hover{
                     color: $mainColor;
-                    font-weight: 500;
+                    
+                    font-size: 16px;
+                    font-weight: 600;
+                    opacity: 1.0;
+                    top: -2px;
+                    
                 }
                 
             }

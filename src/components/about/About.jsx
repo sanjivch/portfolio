@@ -13,7 +13,7 @@ const About = () => {
                 </div>
                 
                 <h2>About me</h2>
-                <hr></hr>
+                <div className="hr3"></div>
                 <div className="text-content">
                     <p>I'm a chemical engineer turned data scientist working in the field of Industrial AI. 
                     My work involves solving process and manufacturing problems, at scale, using machine learning/ 
@@ -38,26 +38,39 @@ const About = () => {
                 
                 <div className="skills">
                     <h2>Skills</h2>
-                    
-                    <div className="skill-icon">
-                        <h3>Machine Learning</h3>
-                        sklearn
-                        tensorflow
-                        pytorch
-                        <h3>Visualization</h3>
-                        d3js Plotly 
-                        <h3>prototyping</h3>
-                        Streamlit 
-                        Dash
-                        <h3>Web Frameworks</h3>
-                        <SiFlask className='icon'/>
-                        <SiFastapi className='icon'/>
-                        <h3>Misc</h3>
-                        <FaGitAlt className='icon'/>
-                        <FaPython className='icon'/>
-                        Docker
+                    <div className="hr3"></div>
+                    <div className="skill-icon-card">
+                        <h3>Data Analysis and Machine Learning</h3>
+                        <img src="assets/Pandas_logo.svg" alt="pandas" width="100px" />
+                        <img src="assets/Scikit_learn_logo_small.svg" alt="sklearn" width="80px" />
+                        <img src="assets/Tensorflow_logo.svg" alt="tensorflow" width="40px" />
                         
-                        <FaDatabase className='icon'/>
+                        <div className="hr3"></div>
+                        <h3>Visualization</h3>
+                        <img src="assets/Matplotlib_icon.svg" alt="matplotlib" width="40px" />
+                        
+                        <img src="assets/d3js-icon.svg" alt="d3js" width="40px" /> 
+                        <img src="assets/plot_ly-icon.svg" alt="plotly" width="40px" />
+                        <div className="hr3"></div>
+                        <h3>Prototyping</h3>
+                        
+                        <img src="assets/streamlit-mark-color.svg" alt="streamlit" width="50px" />
+                        <img src="assets/pinpng.com-dash-line-png-2658026.png" alt="dash" width="80px" />
+                        <div className="hr3"></div>
+                        <h3>Web Frameworks</h3>
+                        <img src="assets/Flask_logo.svg" alt="flask" width="80px" />
+                        <img src="assets/fastapi-1.svg" alt="fastapi" width="40px" />
+                        <div className="hr3"></div>
+                        <h3>Databases</h3>
+                        <img src="assets/Postgresql_elephant.svg" alt="postgresql" width="40px" />
+                        <img src="assets/SQLite370.svg" alt="sqlite" width="100px" />
+                        
+                        <div className="hr3"></div>
+                        <h3>Miscellaneous</h3>
+                        <img src="assets/Git-logo.svg" alt="git" width="80px" />
+                        <img src="assets/docker-3.svg" alt="docker" width="120px" />
+                        
+                        
                         
                     </div>
                     
