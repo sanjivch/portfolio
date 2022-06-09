@@ -1,0 +1,49 @@
+@import '../../global.scss';
+.navbar {
+    height: 70px;
+    width: 100%;
+    display:inline-flex;
+    justify-content: center;
+    text-align: center;
+    float: right;
+    
+    align-items: center;
+    background: white;
+    position: fixed;
+    overflow: hidden;
+
+    .nav-logo{
+        font-weight: 800;
+        font-size: 25px;
+        margin: 25px;
+        color: $mainColor;
+        
+        
+        
+    }
+    .nav-items {
+        
+        align-items: center;
+        justify-content: right;
+        //left:50%;
+            a {
+                color: grey;
+                text-decoration: none;
+                margin: 15px;
+                font-size: 15px;
+                font-weight: 400;
+                position: relative;
+                opacity: 0.9;
+                justify-content: center;
+                &:hover{
+                    color: $mainColor;
+                    font-weight: 500;
+                }
+                
+            }
+            
+                
+                
+            }
+        }
+        

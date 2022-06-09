@@ -1,0 +1,69 @@
+@import '../../global.scss';
+.contact {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    .left {
+        flex: 1;
+        display: flex;
+        font-size: 800px;
+        color: $mainColor;
+        transform: rotate(-15deg);
+        opacity: 25%;
+        overflow: hidden;
+    }
+    .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        h2 {
+            font-size: 30px;
+        }
+        form {
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            input {
+                width: 300px;
+                height: 30px;
+                font-size: 14px;
+            }
+            textarea {
+                width: 300px;
+                height: 200px;
+                font-size: 14px;
+            }
+            button {
+                width: 150px;
+                height: 30px;
+                color: white;
+                background-color: $mainColor;
+                border: none;
+                cursor: pointer;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .foot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // position: relative;
+        // bottom: -260px;
+        // left: -500px;
+        position: absolute;
+        bottom: 10px;
+        width: 200px;
+        left: 25%;
+        color: $mainColor;
+    }
+}

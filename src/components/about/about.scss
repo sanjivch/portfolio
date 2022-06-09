@@ -1,0 +1,106 @@
+@import '../../global.scss';
+.about {
+    background-color: $mainColor;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    h1 {
+        font-size: 50px;
+    }
+    .textContent {
+        padding-top: 20px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .iconContent {
+        width: 80%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        overflow: hidden;
+        .skillIcons {
+            width: 40%;
+            height: 80px;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 10px;
+            color: $mainColor;
+            background-color: white;
+            font-size: 30px;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            h2 {
+                font-size: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .skillItem {
+                font-size: 40px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                cursor: pointer;
+            }
+        }
+        .socialIcons {
+            width: 40%;
+            height: 80px;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 10px;
+            color: $mainColor;
+            background-color: white;
+            font-size: 30px;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            h2 {
+                font-size: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .socialItem {
+                font-size: 40px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                cursor: pointer;
+            }
+            &:hover {
+                font-size: 45px;
+            }
+        }
+    }
+    a {
+        position: relative;
+        bottom: -100px;
+        width: 44px;
+        //left: 50%;
+        color:white;
+        .arrow {
+            font-size: 40px;
+            color: $mainColor;
+            background-color: white;
+            animation: arrowBlink 3s infinite;
+            border-radius: 50%;
+        }
+        @keyframes arrowBlink {
+            100% {
+                opacity: 10%;
+            }
+        }
+    }
+}

@@ -1,0 +1,146 @@
+@import '../../global.scss';
+
+
+  
+$width: 100%;
+
+.intro {
+    background-color: white;
+    //background-image: repeating-linear-gradient(to bottom right, $mainColor, white);
+    //display: flex;
+    // .left {
+    //     flex: 0.5;
+    //     overflow: hidden;
+    //     .imgContainer {
+    //         border-radius: 80%;
+    //         overflow: hidden;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         float: right;
+    //         margin-top: 100px;
+    //         img {
+    //             width: 50%;
+    //             height: 50%;
+    //             border-radius: 50%;
+    //             border: 20px solid $mainColor;
+    //             border-color: $mainColor;
+    //             box-shadow: 0 0 1px 1px white;
+    //             display: block;
+    //             animation: gradBorder 5s infinite;
+    //         }
+    //         @keyframes gradBorder {
+    //             50% {
+    //                 border-color: rgb(255, 255, 255);
+    //                 transition: 200ms ease-in-out;
+    //             }
+    //         }
+    //     }
+    // }
+    // 
+    
+        
+      
+      
+    .right {
+        //flex: 0.5;
+        //position: relative;
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            padding-top: 10%;
+            //padding-left: 500px;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1 {
+                font-size: 50px;
+                margin: 10px 0;
+                color: $mainColor;
+            }
+            h2 {
+                font-size: 25px;
+                .wavehand {
+                    fill: rgb(252, 216, 16);
+                }
+            }
+            h3 {
+                font-size: 25px;
+                rightarrow {
+                    align-items: center;
+                    justify-content: center;
+                    padding-top: 10px;
+                }
+                span {
+                    font-size: inherit;
+                    font-weight: 100;
+                    // font-family: Courier, monospace;
+                    color: black;
+                }
+                .ityped-cursor {
+                    animation: blink 1s infinite;
+                }
+                @keyframes blink {
+                    50% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            
+            .socialItem {
+                font-size: 50px;
+                display: flex;
+                margin: 80px;
+                
+                flex-direction: row;
+                align-items: center;
+                
+                cursor: pointer;
+                
+                a {
+                    justify-content: space-between;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin: 15px;
+                    .icon {
+                        color: gray;
+                        margin: 15px;
+                    
+                        &:hover {
+                            font-size: 60px;
+                            color: $mainColor;
+    
+                        }
+                }
+                }
+                
+        }
+
+            a {
+                position: absolute;
+                bottom: 10px;
+                width: 44px;
+                left: 50%;
+                color: $mainColor;
+                .arrow {
+                    font-size: 40px;
+                    color: white;
+                    background-color: $mainColor;
+                    animation: arrowBlink 3s infinite;
+                    border-radius: 50%;
+                }
+                @keyframes arrowBlink {
+                    100% {
+                        opacity: 10%;
+                    }
+                }
+            }
+        }
+    }
+}
