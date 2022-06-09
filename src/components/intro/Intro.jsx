@@ -4,7 +4,7 @@ import './intro.scss';
 import {MdWavingHand, MdOutlineWavingHand,MdKeyboardArrowRight, MdKeyboardArrowDown} from 'react-icons/md';
 import { useEffect, useRef } from 'react';
 import { FaPython, FaDatabase , FaGithubSquare, FaLinkedin, FaGitAlt, FaKaggle, FaTwitterSquare} from 'react-icons/fa';
-
+import { HiDocumentText } from "react-icons/hi";
 
 const Intro = () => {
 
@@ -15,32 +15,43 @@ const Intro = () => {
             backDelay: 100000,
             backSpeed: 60,
             disableBackTyping: false,
+            loop: false,
             strings: ['Data Scientist \u2727 MLOps \u2727 Python Developer' ] 
         })
     }, []);
     return (
         <div className='intro' id='intro'>
              
-            <div className="right">
+            <div className="main-body">
                 <div className="wrapper">
                     <h2>Hello, I'm</h2> 
                     <h1>Sanjiv Chemudupati</h1>
-                    <h3>&nbsp;<span ref={textRef}></span></h3>
-
-                    
-                    {/*<a href="https://github.com/sanjivch">
+                    <h3><span ref={textRef}></span></h3>
+                </div>
+                <div className="social-icons">
+                    <a href="https://github.com/sanjivch">
                     <FaGithubSquare className='icon'/>
                     </a>
+                    
                     <a href="https://www.linkedin.com/in/sanjivch09/">
                     <FaLinkedin className='icon'/>
-    </a>*/}
+                    </a>
+
+                    {/*<a href="">
+                    <HiDocumentText className='icon'/>
+                    </a>*/}
+                    
+                </div> 
+                <div className="arrow-wrapper">
+                    <a href="#about">
+                    <MdKeyboardArrowDown className="arrow" />
+                    </a>
+                </div>
                     
                     
 
-                    <a href="#about">
-                        <MdKeyboardArrowDown className="arrow" />
-    </a>
-                </div>
+                    
+                
             </div>
         </div>
     );
