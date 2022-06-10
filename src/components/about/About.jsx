@@ -15,7 +15,7 @@ const About = () => {
                 <h2>About me</h2>
                 <div className="hr3"></div>
                 <div className="text-content">
-                    <p>I'm a chemical engineer turned data scientist working in the field of Industrial AI. 
+                    <p className="intro-para">I'm a chemical engineer turned data scientist working in the field of Industrial AI. 
                     My work involves solving process and manufacturing problems, at scale, using machine learning/ 
                     deep learning. I predominantly work with timeseries data in the areas of anomaly detection, 
                     forecasting and process optimization.  

@@ -1,14 +1,14 @@
 import React from 'react';
 import './projects.scss';
 import { FaArrowCircleLeft, FaArrowCircleRight, FaLinkedin, FaGithubSquare,} from "react-icons/fa";
-import { SiLinkedin, SiGithub, SiBuymeacoffee, SiReact}  from "react-icons/si";
+import { SiLinkedin, SiGithub, SiBuymeacoffee, SiReact, SiHtml5, SiCss3, SiYoutube}  from "react-icons/si";
 import {ImMail} from "react-icons/im";
 import { useState } from 'react';
 
 const Projects = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     
-    const data = [[1,'1'], [2,'a'], [3,'c']];
+    const data = [1];
     const handleClick = (direction) => {
         direction === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide-1 : data.length-1) :
         setCurrentSlide(currentSlide < data.length - 1 ? currentSlide+1 : 0)
@@ -25,11 +25,12 @@ const Projects = () => {
                             <div className="imgContainer">
                                 <img src="https://unsplash.it/200/200" alt="" />
                             </div>
-                            <h2>Power Dashboard {d[1]}{i}</h2>
+                            <h2>Power Dashboard </h2>
                             <p>Bokeh and Flask
                                 <br />
                                 dashboard
                             </p>
+                            
                         </div>
                     </div>
                     <div className="right">
@@ -44,10 +45,10 @@ const Projects = () => {
             
         <div className="footer">
         <div className="footer-left">
-            <h3>Sanjiv's personal website</h3>
-            <p>&copy; Sanjiv Chemudupati. All rights reserved. All opinions and views expressed are personal.
+            
+            <p>&copy; Sanjiv Chemudupati {new Date().getFullYear()}. All rights reserved. All opinions and views expressed are personal.
             </p>
-            <p>This site was made from scratch in <SiReact /></p>
+            <p>This site was made from scratch in <SiReact />, <SiHtml5 /> and <SiCss3 /> with a lot of help from several <SiYoutube /> videos!</p>
         </div>
         <div className="footer-right">
             <a href="mailto:sanjiv.ch09@gmail.com"><ImMail /></a>

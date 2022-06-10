@@ -1,70 +1,26 @@
 import React from 'react';
 import './portfolio.scss';
-import { useEffect, useState } from 'react';
-import Portfoliolist from './portfolioList/portfolioList';
+import projectList from '../../projects.json';
 
 const Portfolio = () => {
-    const [selected, setSelected] = useState("featured");
-    const list = [
-        {
-            id: "featured",
-            title: "Featured"
-        },
-
-        {
-            id: "dataCleaning",
-            title: "Data Cleaning"
-        },
-
-        {
-            id: "dataVisualization",
-            title: "Data Visualization"
-        },
-
-        {
-            id: "modeling",
-            title: "Modeling"
-        },
-
-        {
-            id: "modelDeployment",
-            title: "Model Deployment"
-        }
-                
-    ];
-
+    
+    console.log(projectList)
     return (
         <div className='portfolio' id='portfolio'>
             <h2>Portfolio</h2>
             <br /><br /><br /><br />
             <div className="container">
-                <div className="item">
-                    <img src="https://picsum.photos/200/300?random=1" alt="" />
-                    <h3>Bank Market Classification</h3>
-                    <p>test</p>
-                    
-                </div>
-                <div className="item">
-                    <img src="https://picsum.photos/200/300?random=1" alt="" />
-                    <h3>Heart Disease Classification</h3>
-                </div>
-                <div className="item">
-                    <img src="https://picsum.photos/200/300?random=1" alt="" />
-                    <h3>App #1</h3>
-                </div>
-                <div className="item">
-                    <img src="https://picsum.photos/200/300?random=1" alt="" />
-                    <h3>App #1</h3>
-                </div>
-                <div className="item">
-                    <img src="https://picsum.photos/200/300?random=1" alt="" />
-                    <h3>App #1</h3>
-                </div>
-                <div className="item">
-                    <img src="https://picsum.photos/200/300?random=1" alt="" />
-                    <h3>App #1</h3>
-                </div>
-
+            {projectList.length &&
+                projectList.map((project, i) => {
+                    return (
+                        <div className="item">
+                            <img src="https://picsum.photos/200/300?random=1" alt="" />
+                            <h3>{project.title}</h3>
+                            <p>Tagged under: {project.tags} <br /> <br /><a class="button" href={project.url}>View on GitHub</a></p>
+                        </div>
+                    )
+                })}
+                
             </div>
         </div>
     );

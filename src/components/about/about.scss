@@ -61,12 +61,16 @@
             z-index: 1;
           }
         .text-content {
+            
             margin: 10px;
             align-items: center;
             justify-content: center;
             overflow: hidden;
             font-size: 15px;
             z-index: 1;
+            .intro-para{
+                initial-letter: 2;
+            }
         }
 
     }
