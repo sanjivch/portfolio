@@ -1,7 +1,7 @@
 @import '../../global.scss';
 .projects {
     
-    background-color: $mainColor;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,9 +9,9 @@
     overflow: hidden;
     .arrow {
         font-size: 40px;
-        color: white;
-        background-color: $mainColor;
-        border: 0px solid white;
+        color: $mainColor;
+        background-color: white;
+        border: 0px solid $mainColor;
         border-radius: 50%;
         opacity: 50%;
         position: absolute;
@@ -32,25 +32,31 @@
         }
     }
     .slider {
-        height: 300px;
+        height: 400px;
         display: flex;
         position: absolute;
         left: 0;
         transition: all 1s ease-out;
     }
     .container {
+        margin: 5px;
+        padding: 5px;
         width: 100vw;
         display: flex;
         align-items: center;
         justify-content: center;
+        
         .item {
             width: 600px;
             height: 100%;
-            background-color: white;
+            background-color: $mainColor;
+            border: 1px solid $mainColor;
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
+            box-shadow: 0px 0px 5px $mainColor;
+            
             .left {
                 flex: 4;
                 height: 100%;
@@ -60,16 +66,20 @@
                 .leftContainer {
                     width: 90%;
                     height: 70%;
+                    color: white;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                    text-align: left;
                     .imgContainer {
+                        margin-left: 10px;
                         width: 50px;
                         height: 50px;
                         border-radius: 50%;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        
                     }
                 }
             }
@@ -88,7 +98,7 @@
     }
     .footer{
         //margin-top: 34%;
-        padding: 1rem;
+        padding: 0.5rem;
         height: 60px;
         width: 100vw;
         background-color: white;
@@ -103,10 +113,10 @@
         display: inline-flex;
         flex-direction: row;
         .footer-left{
-            //padding: 10px 0 0 0;
-            margin-top: 15px;
-            margin-left: 50px; 
-            margin-right: auto;
+            flex: 0.7;
+            margin: 5px 10px 5px 10px;
+            // margin-left: 50px; 
+            // margin-right: auto;
             
             color: black;
             overflow: hidden;
@@ -118,37 +128,41 @@
             }
             p {
                 font-size: 14px;
+                align-items: center;
+                justify-content: center;
             }
 
 
         }
         .footer-right{
 
-            
+            flex:0.3;
             display: inline-flex;
             overflow: hidden;
             color: $mainColor;
             justify-content: center;
-            margin-left: auto; 
-            margin-right: 50px; 
+            // margin-left: auto; 
+            // margin-right: 50px; 
             text-decoration: none;
+            overflow: hidden;
             h3 {
                 font-size: 20px;
                 align-items: center;
                 justify-content: center;
             }
             a{
-                top: 0;
-                margin: 10px;
+                top: 5px;
+                margin: 0px 10px 0px 10px;
                 font-size: 30px;
                 color: rgb(158, 158, 204);
                 position: relative;
-                
+                align-items: center;
                 transition: top ease 0.5s;
+                overflow: hidden;
 
                 &:hover{
                     color: $mainColor;
-                    top: -5px;
+                    top: 0px;
                 }
 
             }  

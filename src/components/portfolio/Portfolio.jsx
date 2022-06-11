@@ -1,22 +1,36 @@
 import React from 'react';
 import './portfolio.scss';
 import projectList from '../../projects.json';
+//import { useNavigate } from 'react-router-dom';
 
 const Portfolio = () => {
     
     console.log(projectList)
+    // https://www.codegrepper.com/code-examples/javascript/react+open+url+in+new+tab
+    const openInNewTab = (url) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+        if (newWindow) newWindow.opener = null
+      }
+      
+          
+    
     return (
         <div className='portfolio' id='portfolio'>
-            <h2>Portfolio</h2>
-            <br /><br /><br /><br />
+            
+            <h3>Few of my personal projects...</h3><br /><br />
             <div className="container">
             {projectList.length &&
                 projectList.map((project, i) => {
+                    const projectTitle = project.title
+                    const projectUrl = project.url
+                    console.log(projectUrl)
                     return (
                         <div className="item">
-                            <img src="https://picsum.photos/200/300?random=1" alt="" />
                             <h3>{project.title}</h3>
-                            <p>Tagged under: {project.tags} <br /> <br /><a class="button" href={project.url}>View on GitHub</a></p>
+                            <p>Made with: <strong><i>{project.tags}</i></strong> </p>
+                            <button type="button" onClick={() => openInNewTab(project.url)}>{project.button}</button>
+                            
+
                         </div>
                     )
                 })}

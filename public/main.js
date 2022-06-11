@@ -60,6 +60,7 @@ const getProjects = async () => {
                     author : metadata.author ? metadata.author : "Unkown author",
                     tags : metadata.tags ? metadata.tags : "Tag not available",
                     url : metadata.url ? metadata.url : "#",
+                    button : metadata.button ? metadata.button : "NA",
                     content : projectContent ? projectContent : "Content not available",
                     
 

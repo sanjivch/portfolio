@@ -52,9 +52,9 @@ const Projects = () => {
         </div>
         <div className="footer-right">
             <a href="mailto:sanjiv.ch09@gmail.com"><ImMail /></a>
-            <a href="https://www.linkedin.com/in/sanjivch09/"><SiLinkedin /></a>
-            <a href="https://github.com/sanjivch"><SiGithub /></a>
-            <a href=" https://www.buymeacoffee.com/sanjivch09"><SiBuymeacoffee /></a>
+            <a href="https://www.linkedin.com/in/sanjivch09/"><FaLinkedin /></a>
+            <a href="https://github.com/sanjivch"><FaGithubSquare /></a>
+            {/* <a href=" https://www.buymeacoffee.com/sanjivch09"><SiBuymeacoffee /></a>*/}
             
         </div>
         
