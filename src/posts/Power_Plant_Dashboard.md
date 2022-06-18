@@ -1,7 +1,7 @@
 ---
 title: Power-Plant Dashboard 
 author: Sanjiv Chemudupati
-tags: Bokeh, Flask, Python
+tags: Python, Flask, Bokeh 
 url: http://power-plant-dashboard-app.herokuapp.com/dashboard
 button: Live
 ---

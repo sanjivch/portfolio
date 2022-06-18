@@ -1,7 +1,7 @@
 ---
 title: Stock Screener using Dash
 author: Sanjiv Chemudupati
-tags: Dash, Python, Dashboard
+tags: Python, Dash
 url: https://github.com/sanjivch/stocks-screener
 button: Github
 ---

@@ -51,6 +51,7 @@ const Projects = () => {
             <p>This site was made from scratch in <SiReact />, <SiHtml5 /> and <SiCss3 /> with a lot of help from several <SiYoutube /> videos!</p>
         </div>
         <div className="footer-right">
+            
             <a href="mailto:sanjiv.ch09@gmail.com"><ImMail /></a>
             <a href="https://www.linkedin.com/in/sanjivch09/"><FaLinkedin /></a>
             <a href="https://github.com/sanjivch"><FaGithubSquare /></a>
