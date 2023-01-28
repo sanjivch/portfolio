@@ -23,11 +23,11 @@ const Portfolio = () => {
                 projectList.map((project, i) => {
                     const projectTitle = project.title
                     const projectUrl = project.url
-                    console.log(projectUrl)
+                    // console.log(projectUrl)
                     return (
                         <div className="item">
                             <h3>{project.title}</h3>
-                            <p>Made with: <strong><i>{project.tags}</i></strong> </p>
+                            <p>{project.tags}</p>
                             <button type="button" onClick={() => openInNewTab(project.url)}>{project.button}</button>
                             
 

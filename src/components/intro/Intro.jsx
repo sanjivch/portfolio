@@ -17,12 +17,12 @@ const Intro = () => {
             backSpeed: 60,
             disableBackTyping: false,
             loop: false,
-            strings: ['Data Scientist \u2727 MLOps \u2727 Python Developer' ] 
+            strings: ['Data Science \u2727 Machine Learning' ] 
         })
     }, []);
     return (
         <div className='intro' id='intro'>
-            <Particle />
+            
                 <div className="main-body">
                 
                     <div className="wrapper">

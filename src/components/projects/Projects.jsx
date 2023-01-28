@@ -1,7 +1,7 @@
 import React from 'react';
 import './projects.scss';
 import { FaArrowCircleLeft, FaArrowCircleRight, FaLinkedin, FaGithubSquare,} from "react-icons/fa";
-import { SiLinkedin, SiGithub, SiBuymeacoffee, SiReact, SiHtml5, SiCss3, SiYoutube}  from "react-icons/si";
+import { SiLinkedin, SiGithub, SiBuymeacoffee, SiReact, SiHtml5, SiCss3, SiYoutube, SiGmail}  from "react-icons/si";
 import {ImMail} from "react-icons/im";
 import { useState } from 'react';
 
@@ -15,10 +15,11 @@ const Projects = () => {
     };
     return (
         <div className='projects' id='projects'>
-            
+            <h1>MOOC Certifications </h1>
             <div className="slider" style={{transform:`translateX(-${currentSlide *100}vw)`}}>
             {data.map((d, i) => (
             <div className="container">
+            
                 <div className="item">
                     <div className="left">
                         <div className="leftContainer">
@@ -37,7 +38,11 @@ const Projects = () => {
                         <img src="assets/power_plant.png" alt="" />
                     </div>
                 </div>
+
+                
             </div>
+
+            
             ))}
         </div>
         <FaArrowCircleLeft className='arrow left' onClick={() => handleClick("left")}/>
@@ -46,15 +51,14 @@ const Projects = () => {
         <div className="footer">
         <div className="footer-left">
             
-            <p>&copy; Sanjiv Chemudupati {new Date().getFullYear()}. All rights reserved. All opinions and views expressed are personal.
+            <p>&copy; Sanjiv Chemudupati 2021-{new Date().getFullYear()}. All rights reserved. All opinions and views expressed are personal.
             </p>
-            <p>This site was made from scratch in <SiReact />, <SiHtml5 /> and <SiCss3 /> with a lot of help from several <SiYoutube /> videos!</p>
         </div>
         <div className="footer-right">
             
-            <a href="mailto:sanjiv.ch09@gmail.com"><ImMail /></a>
-            <a href="https://www.linkedin.com/in/sanjivch09/"><FaLinkedin /></a>
-            <a href="https://github.com/sanjivch"><FaGithubSquare /></a>
+            <a href="mailto:sanjiv.ch09@gmail.com"><SiGmail /></a>
+            <a href="https://www.linkedin.com/in/sanjivch09/"><SiLinkedin /></a>
+            <a href="https://github.com/sanjivch"><SiGithub /></a>
             {/* <a href=" https://www.buymeacoffee.com/sanjivch09"><SiBuymeacoffee /></a>*/}
             
         </div>
