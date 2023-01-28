@@ -15,7 +15,7 @@ const Projects = () => {
     };
     return (
         <div className='projects' id='projects'>
-            <h1>MOOC Certifications </h1>
+           
             <div className="slider" style={{transform:`translateX(-${currentSlide *100}vw)`}}>
             {data.map((d, i) => (
             <div className="container">
