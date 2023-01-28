@@ -12,7 +12,7 @@ const About = () => {
                     <img src="assets/sanjiv-avatar.png" alt="Sanjiv" />
                 </div>
                 
-                <h2>About me</h2>
+                <h2>About</h2>
                 <div className="hr3"></div>
                 <div className="text-content">
                     <p className="intro-para"><span class="first-letter">I'</span>m a data scientist/ machine learning engineer. 

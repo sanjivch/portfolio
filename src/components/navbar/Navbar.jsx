@@ -15,10 +15,9 @@ const Navbar = () => {
                     <a href="#portfolio">Portfolio</a>
                 
                 
-                    <a href="#projects">Certifications</a>
+                    <a href="#certifications">Certifications</a>
                     
-                
-                
+                    
                     
 
                 

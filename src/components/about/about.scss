@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: center;
     z-index: 10;
+    overflow: hidden;
     .left-content{
         margin: 10px;
         padding: 10px;
@@ -21,7 +22,7 @@
         align-items: center;
         justify-content: center;
         opacity: 1;
-        overflow: hidden;
+        // overflow: hidden;
         .portfolio-image{
             
             width: 200px;
@@ -49,7 +50,7 @@
         h2{
             width: auto;
             margin: 2px;
-            padding-top: 75px;
+            padding: 75px 75px 5px 75px;
             align-items: center;
             text-align: center;
             justify-content: center;
@@ -66,14 +67,16 @@
             background-image: linear-gradient(to right, transparent, white, transparent);  
             z-index: 1;
           }
+        @media only screen and (max-width: 480px) {
         .text-content {
-            
+          
+            width: 90%;
             margin: 10px;
             padding: 10px;
             align-items: center;
             justify-content:baseline;
             overflow: hidden;
-            font-size: 15px;
+            font-size: 50vw;
             color: white;
             z-index: 1;
             // https://css-tricks.com/almanac/properties/i/initial-letter/#:~:text=initial%2Dletter%20is%20a%20CSS,the%20rest%20of%20the%20content.
@@ -82,7 +85,26 @@
                 line-height: 30px;
               }
               
-        }
+        } }
+        @media only screen {
+            .text-content {
+              
+                width: 50%;
+                margin: 10px;
+                padding: 10px;
+                align-items: center;
+                justify-content:baseline;
+                overflow: hidden;
+                font-size: 1vw;
+                color: white;
+                z-index: 1;
+                // https://css-tricks.com/almanac/properties/i/initial-letter/#:~:text=initial%2Dletter%20is%20a%20CSS,the%20rest%20of%20the%20content.
+                .first-letter {
+                    font-size: 28px;
+                    line-height: 30px;
+                  }
+                  
+            } }
 
     }
     .right-content{

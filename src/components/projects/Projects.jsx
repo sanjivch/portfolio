@@ -14,7 +14,7 @@ const Projects = () => {
         setCurrentSlide(currentSlide < data.length - 1 ? currentSlide+1 : 0)
     };
     return (
-        <div className='projects' id='projects'>
+        <div className='projects' id='certifications'>
            
             <div className="slider" style={{transform:`translateX(-${currentSlide *100}vw)`}}>
             {data.map((d, i) => (
@@ -51,7 +51,7 @@ const Projects = () => {
         <div className="footer">
         <div className="footer-left">
             
-            <p>&copy; Sanjiv Chemudupati 2021-{new Date().getFullYear()}. All rights reserved. All opinions and views expressed are personal.
+            <p>&copy; Sanjiv Chemudupati 2017-{new Date().getFullYear()}. All rights reserved. All opinions and views expressed are personal.
             </p>
         </div>
         <div className="footer-right">
