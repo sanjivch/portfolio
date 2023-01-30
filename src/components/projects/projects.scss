@@ -1,20 +1,71 @@
 @import '../../global.scss';
 .projects {
     
-    background-color: white;
+    background-color: $mainColor;
+    color: white;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    h1{
-        top: 10%;
-        position: fixed;
-        font-size: 28px;
-        color: black;
-        background-color: white;
-        z-index: 10;
-    }
+    
+   .cert-providers{
+   
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .cert-provider-item{
+            margin: 10px;
+            padding: 10px;
+            width: 150px;
+            border: 2px;
+            border-radius: 5px;
+            background-color: white;
+            border-color: white;
+            color: black;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .cert-provider-icon{
+                color: $mainColor;
+                font-size: 40px;
+                margin: 5px;
+                padding: 5px;
+            }
+            button {
+                position: relative;
+                //  top: 40px;
+                 height: auto;
+                 width: auto;
+                 margin: 20px;
+                 
+                 color: $mainColor;
+                     background-color: white;
+                     border-color: $mainColor;
+                 border-radius: 5px;
+                 border-style: solid;
+                 border-width: 1px;
+                 outline: 0;
+                 padding: 5px 5px;
+                 font-size: 12px;
+                 font-weight: 400;
+                 cursor: pointer;
+                 text-transform: capitalize;
+                 &:hover {
+                    color: white;
+                    background-color: $mainColor;
+                    border-color: white;
+                 }
+                }
+        }
+
+
+   }
     .arrow {
         font-size: 40px;
         color: $mainColor;

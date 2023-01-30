@@ -30,9 +30,7 @@ const About = () => {
                 <br />
             </div>
 
-            <a href="#portfolio">
-            <MdKeyboardArrowDown className="arrow" />
-            </a>
+           
         </div>
     );
 }
