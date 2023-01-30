@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "./components/navbar/Navbar";
 import Intro from "./components/intro/Intro";
 import About from "./components/about/About";
@@ -13,7 +14,6 @@ function App() {
     <div className="app">
        
        <Navbar />
-      
        <div className="sections">
          <Intro/>
          <About/>

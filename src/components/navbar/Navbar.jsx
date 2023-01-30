@@ -17,9 +17,6 @@ const Navbar = () => {
                 
                     <a href="#certifications">Certifications</a>
                     
-                    
-                    
-
                 
             
                 </div>

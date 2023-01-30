@@ -20,7 +20,8 @@
         .cert-provider-item{
             margin: 10px;
             padding: 10px;
-            width: 150px;
+            width: 200px;
+            height: 180px;
             border: 2px;
             border-radius: 5px;
             background-color: white;
@@ -31,11 +32,16 @@
             display: flex;
             flex-direction: column;
             text-align: center;
+            overflow: hidden;
             .cert-provider-icon{
                 color: $mainColor;
                 font-size: 40px;
                 margin: 5px;
                 padding: 5px;
+            }
+            h3{
+                width: auto;
+                height: 45px;
             }
             button {
                 position: relative;
