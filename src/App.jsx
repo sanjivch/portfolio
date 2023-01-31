@@ -9,11 +9,15 @@ import './app.scss';
 
 
 function App() {
-  
+  const [menuOpenHome, setMenuOpenHome] = useState(true)
+  const [menuOpenAbout, setMenuOpenAbout] = useState(false)
+  const [menuOpenPortfolio, setMenuOpenPortfolio] = useState(false)
+  const [menuOpenCertificates, setMenuOpenCertificates] = useState(false)
+
   return (
     <div className="app">
        
-       <Navbar />
+       <Navbar menuOpenHome={menuOpenHome} setMenuOpenHome={setMenuOpenHome} menuOpenAbout={menuOpenAbout} setMenuOpenAbout={setMenuOpenAbout} menuOpenPortfolio={menuOpenPortfolio} setMenuOpenPortfolio={setMenuOpenPortfolio} menuOpenCertificates={menuOpenCertificates} setMenuOpenCertificates={setMenuOpenCertificates}/>
        <div className="sections">
          <Intro/>
          <About/>
