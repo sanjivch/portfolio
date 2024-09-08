@@ -1,5 +1,5 @@
 import React from 'react';
-import Particle from '../particle/Particle';
+// import Particle from '../particle/Particle';
 import { init } from 'ityped';
 import './intro.scss';
 import {MdWavingHand, MdOutlineWavingHand,MdKeyboardArrowRight, MdKeyboardArrowDown} from 'react-icons/md';
