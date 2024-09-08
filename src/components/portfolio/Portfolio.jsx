@@ -38,7 +38,7 @@ const Portfolio = () => {
                 
             </div>*/}
             <div className='portfolio-sections'>
-            <h3><MdTranslate className='icon'/> Natural Language Processing</h3>
+            <h3><MdTranslate className='icon'/> Text</h3>
             <div className="container">
             {projectList.length &&
                 projectList.map((project, i) => {
@@ -57,7 +57,7 @@ const Portfolio = () => {
                 })}
                 
             </div>
-            <h3><FiVolume2 className='icon'/> Speech/ Audio</h3>
+            <h3><FiVolume2 className='icon'/> Audio</h3>
             <div className="container">
             {projectList.length &&
                 projectList.map((project, i) => {
@@ -95,7 +95,7 @@ const Portfolio = () => {
                 })}
                 
             </div>
-            <h3><MdTableView className='icon'/> Others</h3>
+            <h3><MdTableView className='icon'/> Image/ Video</h3>
             <div className="container">
             {projectList.length &&
                 projectList.map((project, i) => {
