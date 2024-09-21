@@ -11,12 +11,12 @@ export default function About() {
         <title>{`About | ${BLOG_NAME}`}</title>
       </Head>
       <Container>
-        <PageHeading>Hi, I'm Sanjiv.</PageHeading>
+        <PageHeading>Hi, I am Sanjiv.</PageHeading>
         <section className="max-w-3xl py-8 md:pt-8 md:pb-36">
           <p>
-          I'm a machine learning engineer. I work on problems that are at the intersection of modalities - image/video, audio and text. 
+          I am a machine learning engineer. I work on problems that are at the intersection of modalities - image/video, audio and text. 
 
-I'm interested in the model fine-tuning and making trained models faster and lighter. I also love deploying models using inference efficient frameworks like NVIDIA Triton, Intel OpenVino and Deepstream in production. 
+          I am interested in the model fine-tuning and making trained models faster and lighter. I also love deploying models using inference efficient frameworks like NVIDIA Triton, Intel OpenVino and Deepstream in production. 
           </p>
           
         </section>
