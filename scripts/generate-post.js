@@ -16,7 +16,7 @@ excerpt: "Lorem ipsum."
 coverImage: "/assets/blog/2022/ottawa-office.jpg"
 date: "${new Date(Date.now()).toISOString()}"
 author:
-  name: "sandypockets"
+  name: "sanjivch"
   picture: "/assets/blog/authors/sandypockets_avatar.jpg"
 ogImage:
   url: "/assets/blog/2022/ottawa-office.jpg"
