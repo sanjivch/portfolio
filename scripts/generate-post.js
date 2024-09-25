@@ -17,7 +17,7 @@ coverImage: "/assets/blog/2022/ottawa-office.jpg"
 date: "${new Date(Date.now()).toISOString()}"
 author:
   name: "sanjivch"
-  picture: "/assets/blog/authors/sandypockets_avatar.jpg"
+  picture: "/assets/blog/authors/sanjiv.jpg"
 ogImage:
   url: "/assets/blog/2022/ottawa-office.jpg"
 ---

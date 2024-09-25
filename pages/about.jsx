@@ -15,8 +15,10 @@ export default function About() {
         <section className="max-w-3xl py-8 md:pt-8 md:pb-36">
           <p>
           I am a machine learning engineer. I work on problems that are at the intersection of modalities - image/video, audio and text. 
-
-          I am interested in the model fine-tuning and making trained models faster and lighter. I also love deploying models using inference efficient frameworks like NVIDIA Triton, Intel OpenVino and Deepstream in production. 
+</p>
+<br></br>
+<p>
+          I love model fine-tuning and making trained models faster and lighter. I deploy models using inference efficient frameworks like NVIDIA Triton, Intel OpenVino and Deepstream in production. 
           </p>
           
         </section>
