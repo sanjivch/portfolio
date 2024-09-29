@@ -1,5 +1,5 @@
 ---
-title: 'Pruning'
+title: 'CUDA basics'
 excerpt: "Have you ever pruned a YOLOv8 model. Dive in to find out how..."
 coverImage: '/assets/blog/markdown-reference/book.jpg'
 date: '2024-09-24T05:35:07.322Z'
@@ -10,10 +10,8 @@ ogImage:
   url: '/assets/blog/nextjs-for-blogs/cover.jpg'
 ---
 
-# Pruning
+# What is CUDA?
 
-We will prune a Yolov8 model
+CPU vs GPU
 
-## Unstructured
-
-## Structured
+1. CPU - low latency; GPU - high throughput
