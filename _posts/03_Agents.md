@@ -1,6 +1,6 @@
 ---
 title: 'Agents'
-excerpt: "HUgging Face AI Agents course"
+excerpt: "Hugging Face AI Agents course"
 coverImage: '/assets/blog/markdown-reference/book.jpg'
 date: '2025-02-18T23:35:07.322Z'
 author:
@@ -12,7 +12,7 @@ ogImage:
 
 # AI Agents
 
-1. Need an LLM - it is the brain of the agent! They provide the foundation for understanding and generating human language.
+1. Need an LLM - it is the brain of the agent! Theynpm provide the foundation for understanding and generating human language.
 
 
 ## Chat Templates - Key points
@@ -24,3 +24,13 @@ ogImage:
 3. System prompt defines how a model should behave - and is persistent. It also provides information about the tools available, instructions to the model on how to format the actions to take, guidelines on how the thought process is going to be. 
 
 4. Base model can be prompted to behave like instruct model using consistent prompt formatting. Template formats like *ChatML* structures conversations with role indicators.
+
+## Tools
+Agents take *actions* via *tools*. A tool is function given to an LLM. 
+
+> LLMs cannot call tools by themselves - infact they have no idea. So, we teach them (make them aware) of the tools and ask them to invoke these tools when needed.
+
+Agent is responsible to parse LLM's output and call the tool.The output from the tool will be sent back to LLM.
+
+
+ 
